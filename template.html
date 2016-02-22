@@ -26,18 +26,20 @@
             <img class="logo" src="img/factory.png">
           </span>
           <span class="title">
-            <div class="chinese">Chinese title</div>
-            <div class="pinyin">Pinyin title</div>
-            <div class="english">English title</div>
+            <div class="chinese">{{chineseTitle}}</div>
+            <div class="pinyin">{{pinyinTitle}}</div>
+            <div class="english">{{englishTitle}}</div>
           </span>
         </div>
 
         <div class="body">
+          <br>
           <div class="vocabWord" ng-repeat="word in vocabWords">
             <span class="chinese">{{word.chinese}}</span>
             <span class="pinyin">({{word.pinyin}})</span>
             <span class="flex"></span>
             <span class="english">{{word.english}}</span>
+            <br>
           </div>
         </div>
       </div>
