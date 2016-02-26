@@ -65,6 +65,7 @@ html {
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, 0);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .header {
@@ -88,10 +89,15 @@ html {
 .title {
   display:inline-block;
   position: absolute;
+  text-align:center;
   top: 50%;
   left:50%;
   transform: translate(0,-50%);
 }
+
+/*.container {
+  display: flex;
+}*/
 
 .title .chinese {
   font-size:19px;
