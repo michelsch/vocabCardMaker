@@ -5,7 +5,7 @@ var myApp = angular.module('myApp',[]);
 myApp.controller('myController', ['$scope', function($scope) {
 
   $scope.chineseTitle = 'Chinese Title';
-  $scope.pinyinTitle = 'Pinyin Title';
+  $scope.pinyinTitle =  cjst.chineseToPinyin($scope.chineseTitle).join(' ');;
   $scope.englishTitle = 'English Title';
 
   var vocabList = [
